@@ -1,4 +1,6 @@
 ## Setup
+### System Specs: 
+ThinkPad T480 with MX Linux Installed
 ```
 sudo apt install gnat
 ```
