@@ -6,11 +6,12 @@ RN
 RV NO_IO
 RV NO_DYNAMIC_SIZED_OBJECTS
 
-U main%b		main.adb		8475e161 NE OO SU
+U main%b		main.adb		bb4969ca NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
 
 D ada.ads		20240801081713 76789da1 ada%s
 D a-except.ads		20240801081713 e7970cd9 ada.exceptions%s
@@ -24,12 +25,14 @@ D a-textio.ads		20240801081713 34ef47de ada.text_io%s
 D a-unccon.ads		20240801081713 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20240801081713 9111f9c1 interfaces%s
 D i-cstrea.ads		20240801081713 ffd01b9d interfaces.c_streams%s
-D main.adb		20260128112332 b09aa6bf main%b
+D main.adb		20260128112910 8fa62e14 main%b
 D system.ads		20240801081714 14286b0f system%s
 D s-conca2.ads		20240801081713 b5fb73f7 system.concat_2%s
 D s-crtl.ads		20240801081713 beb39b9e system.crtl%s
 D s-exctab.ads		20240801081713 91bef6ef system.exception_table%s
 D s-ficobl.ads		20240801081713 dc5161d4 system.file_control_block%s
+D s-imagei.ads		20240801081713 5e131ce0 system.image_i%s
+D s-imgint.ads		20240801081713 67e4edfb system.img_int%s
 D s-parame.ads		20250315014742 a1aeab5c system.parameters%s
 D s-putima.ads		20240801081713 17291fe4 system.put_images%s
 D s-secsta.ads		20240801081713 578279f5 system.secondary_stack%s
@@ -39,6 +42,11 @@ D s-stalib.ads		20240801081713 1c9580f6 system.standard_library%s
 D s-stoele.ads		20240801081713 ccded4e8 system.storage_elements%s
 D s-traent.ads		20240801081713 c81cbf8c system.traceback_entries%s
 D s-unstyp.ads		20240801081713 fa2a7f59 system.unsigned_types%s
+D s-valspe.ads		20240801081714 b0fcd073 system.val_spec%s
+D s-vaispe.ads		20240801081714 8280550e system.value_i_spec%s
+D s-vauspe.ads		20240801081714 89269ba5 system.value_u_spec%s
+D s-vs_int.ads		20240801081714 06b6b724 system.vs_int%s
+D s-vs_uns.ads		20240801081714 e7f47a27 system.vs_uns%s
 D s-wchcon.ads		20240801081714 d9032363 system.wch_con%s
 G a e
 G c Z b b [main standard 5 11 none]
@@ -46,9 +54,15 @@ X 1 ada.ads
 16K9*Ada 20e8 13|1r6 3r5
 X 9 a-textio.ads
 58K13*Text_IO 785e16 13|1w10 3r9
-565U14*Put_Line 13|8s7
+565U14*Put_Line 13|11s7 30s4 31s4
 X 13 main.adb
-5U11*Main 5b11 12l5 12t9
-6U14 Say_Hello 6b14 6>24 9l8 9t17 11s4
-6a24 Name{string} 8r28
+5U11*Main 5b11 32l5 32t9
+6i4 X{integer} 25m4 28m9 28r9 30r27
+7i4 Y{integer} 26m4 28m12 28r12 31r27
+9U14 Say_Hello 9b14 9>24 12l8 12t17 23s4
+9a24 Name{string} 11r28
+14U14 Swap 14b14 14=19 14=22 20l11 20t15 28s4
+14i19 A{integer} 17r18 18m10
+14i22 B{integer} 18r15 19m10
+15i7 Temp{integer} 17m10 19r15
 
