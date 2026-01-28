@@ -16,7 +16,7 @@ RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
 RV NO_DYNAMIC_SIZED_OBJECTS
 
-U functions%b		functions.adb		c0f32465 NE OO SU
+U functions%b		functions.adb		7b8dfae3 NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
@@ -42,7 +42,7 @@ D a-stuten.ads		20240801081713 c6ced0ae ada.strings.utf_encoding%s
 D a-tags.ads		20240801081713 9eaa38c6 ada.tags%s
 D a-textio.ads		20240801081713 34ef47de ada.text_io%s
 D a-unccon.ads		20240801081713 0e9b276f ada.unchecked_conversion%s
-D functions.adb		20260128111117 f41c63bb functions%b
+D functions.adb		20260128111734 4f62bd3d functions%b
 D interfac.ads		20240801081713 9111f9c1 interfaces%s
 D i-cstrea.ads		20240801081713 ffd01b9d interfaces.c_streams%s
 D system.ads		20240801081714 14286b0f system%s
@@ -82,27 +82,31 @@ X 1 ada.ads
 16K9*Ada 20e8 13|1r6 3r5
 X 11 a-textio.ads
 58K13*Text_IO 785e16 13|1w10 3r9
-565U14*Put_Line 13|37s4 39s4 41s4 43s4
+565U14*Put_Line 13|50s4 52s4 54s4 56s4 59s7
 X 13 functions.adb
-5U11*Functions 5b11 44l5 44t14
-6V13 Add{integer} 6b13 6>17 6>30 9l8 9t11 37s28
+5U11*Functions 5b11 62l5 62t14
+6V13 Add{integer} 6b13 6>17 6>30 9l8 9t11 50s28
 6i17 X{integer} 8r14
 6i30 Y{integer} 8r18
-11V13 Add{float} 11b13 11>17 11>20 14l8 14t11 43s45
+11V13 Add{float} 11b13 11>17 11>20 14l8 14t11 56s45
 11f17 X{float} 13r14
 11f20 Y{float} 13r18
-17R9 Point 19e14 21r51 26r8 39r14
+17R9 Point 19e14 21r51 26r8 52r14
 18f7 X{float} 23m15
 18f9 Y{float} 23m26
-21V13 Make_Point{17R9} 21b13 21>24 21>30 24l8 24t18 38s9
+21V13 Make_Point{17R9} 21b13 21>24 21>30 24l8 24t18 51s9
 21f24 Xval{float} 23r20
 21f30 Yval{float} 23r31
-26r4 X{17R9} 38m4 39r26
-28V13 Multiply{integer} 28b13 28>22 28>24 35l8 35t16 41s42
+26r4 X{17R9} 51m4 52r26
+28V13 Multiply{integer} 28b13 28>22 28>24 35l8 35t16 54s42
 28i22 A{integer} 34r21
 28i24 B{integer} 34r33
 29V16 Double{integer} 29b16 29>23 32l11 32t17 34s14 34s26
 29i23 X{integer} 31r17
+37V13 Even{boolean} 37>18 40b13 43l8 43t12 47s32 58s7
+37i18 N{integer} 40b18 42r15 42r34
+38V13 Odd{boolean} 38>17 42s30 45b13 48l8 48t11
+38i17 N{integer} 45b17 47r15 47r37
 X 16 system.ads
 67M9*Address
 X 28 s-memory.ads

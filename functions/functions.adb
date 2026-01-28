@@ -33,6 +33,19 @@ procedure Functions is
    begin
       return Double(A) * Double(B);
    end Multiply;
+
+   function Even(N : Integer) return Boolean;
+   function Odd(N : Integer) return Boolean;
+
+   function Even(N : Integer) return Boolean is
+   begin
+      return (N = 0) or else Odd(N -1);
+   end Even;
+
+   function Odd(N : Integer) return Boolean is
+   begin
+      return (N /= 0) and then Even(N -1);
+   end Odd;
 begin
    Put_Line (Integer'Image(Add(1, 2)));
    X := Make_Point(1.0, 1.0);
@@ -41,4 +54,9 @@ begin
    Put_Line ("Result = " & Integer'Image(Multiply(2, 3)));
 
    Put_Line ("Add Overload: " & Float'Image(Add(1.2, 2.4)));
+
+   if Even(6) then 
+      Put_Line ("its even");
+   end if;
+   
 end Functions;
