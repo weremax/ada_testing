@@ -31,7 +31,7 @@ begin
    Put_Line("X: " & Float'Image(Point1.X));
    Put_Line("Y: " & Float'Image(Point1.Y));
 
-   ut_Line("X: " & Float'Image(Point12.X));
+   Put_Line("X: " & Float'Image(Point2.X));
    Put_Line("Y: " & Float'Image(Point2.Y));
    
 end Main;
